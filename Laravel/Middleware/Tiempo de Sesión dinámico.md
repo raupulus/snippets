@@ -1,9 +1,9 @@
 Tiempo de Sesión dinámico
 ========================
 
-Por ahora, está planteado para tener una tabla en la base de datos con ese valor (Yo uso una llamada web_settings para la configuración del sitio y empresa, como nombre, dirección, porcentaje de iva, teléfono… así lo puede camibar el cliente dinámicamente y no pedirnos hacerlo pero podéis usar lo que queráis)
+Por ahora, está planteado para tener una tabla en la base de datos con ese valor.
 
-Este middleware hay que añadirlo en el Kernel.php justo antes del middleware “StartSession” para que se cierre la sesión del usuario si disminuye ese tiempo y se asigne antes. 
+Este middleware hay que añadirlo en el Kernel.php justo antes del middleware “StartSession” para que se cierre la sesión del usuario si disminuye ese tiempo y se asigne antes.
 
 ```
 <?php
